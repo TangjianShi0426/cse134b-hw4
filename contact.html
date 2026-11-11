@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for my Computer Science portfolio">
+    <title>Contact | Computer Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>
+                Thank you for visiting my portfolio.
+                Feel free to contact me about projects,
+                internships, or collaboration opportunities.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>
+                Email:
+                <a href="mailto:student@example.com">
+                    student@example.com
+                </a>
+            </p>
+            <p>
+                GitHub:
+                <a href="https://github.com/">
+                    Visit GitHub
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <p>
+                This form demonstrates semantic HTML form elements.
+                It does not submit messages yet.
+            </p>
+
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name"
+                               name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email"
+                               name="email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <p>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject"
+                               name="subject">
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea id="message" name="message"
+                                  rows="6" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="button">Send Message</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Computer Science Portfolio.</p>
+        <p><a href="index.html">Return to Home</a></p>
+    </footer>
+</body>
+</html>

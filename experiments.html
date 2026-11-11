@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML experiments and MathML">
+    <title>HTML Experiments | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="data:,">
+
+
+    <script type="application/json" id="page-metadata">
+        {
+            "page": "experiments",
+            "course": "CSE 134B"
+        }
+    </script>
+
+    
+<script>
+    class HelloConsole extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello World!");
+        }
+    }
+
+    customElements.define("hello-console", HelloConsole);
+</script>
+
+
+</head>
+<body>
+    
+    <noscript>
+        <p>
+            This website uses semantic HTML and can be
+            viewed without JavaScript enabled.
+        </p>
+    </noscript>
+
+    <header>
+        <h1>HTML Experiments</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML Template</h2>
+            <p>This section demonstrates the template element.</p>
+
+            <template id="example-template">
+                <article>
+                    <h3>Template Content</h3>
+                    <p>This content is stored in a template.</p>
+                </article>
+            </template>
+        </section>
+
+        <section>
+            <h2>Audio Example</h2>
+            <p>An example of the HTML audio element.</p>
+
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video Example</h2>
+            <p>An example of the HTML video element.</p>
+
+            <video controls width="320" height="240">
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <section>
+            <h2>Canvas Example</h2>
+            <p>The canvas element provides a drawing area.</p>
+
+            <canvas id="example-canvas" width="300" height="150">
+                Your browser does not support canvas.
+            </canvas>
+        </section>
+
+        <section>
+            <h2>MathML Extra Credit</h2>
+            <p>Einstein's mass-energy equivalence formula:</p>
+
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <msup>
+                    <mi>c</mi>
+                    <mn>2</mn>
+                </msup>
+            </math>
+
+            <h3>Why MathML Adoption Was Slow</h3>
+            <p>
+                MathML has been part of web standards for many years,
+                but browser support was inconsistent.
+                Different browsers used different rendering engines,
+                making mathematical expressions difficult to display
+                consistently.
+            </p>
+            <p>
+                Developers often preferred images, LaTeX-based tools,
+                or JavaScript libraries such as MathJax.
+                Modern browser support has improved, making native
+                MathML more practical for web development.
+            </p>
+        </section>
+        
+        
+        <section>
+            <h2>Additional HTML Elements</h2>
+
+            <div class="example-border">
+        <h3>Div and Span Examples</h3>
+        <p>
+            The div element groups related content.
+            The <span>span element</span> marks
+            a portion of inline text.
+            </p>
+        </div>
+
+    <h3>Dialog Example</h3>
+     <dialog open>
+         <p>This is a static HTML dialog example.</p>
+        </dialog>
+        </section>
+
+
+
+
+    
+        <section>
+            <h2>Image and Picture Examples</h2>
+            <p>
+                The picture element can provide different
+                image sources for different screen sizes.
+            </p>
+
+            <picture>
+                <source media="(min-width: 800px)"
+                        srcset="https://placehold.co/600x300/png">
+                <img src="https://placehold.co/300x150/png"
+                     alt="Placeholder image demonstrating HTML picture"
+                     width="300" height="150">
+            </picture>
+        </section>
+
+        <section>
+            <h2>SVG Example</h2>
+            <p>
+                SVG allows vector graphics to be displayed
+                directly in HTML.
+            </p>
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="250" height="150"
+                 viewBox="0 0 250 150"
+                 role="img"
+                 aria-label="Blue circle inside a rectangle">
+                <rect x="10" y="10"
+                      width="230" height="130"
+                      fill="none" stroke="black"
+                      stroke-width="2"/>
+                <circle cx="125" cy="75" r="45"
+                        fill="blue"/>
+            </svg>
+        </section>
+
+
+
+    
+        <section>
+            <h2>Iframe Example</h2>
+            <p>
+                The iframe element embeds another HTML
+                document inside the current page.
+            </p>
+
+            <iframe src="about.html"
+                    title="Preview of the About Page"
+                    width="400"
+                    height="250">
+            </iframe>
+        </section>
+
+        
+<section>
+    <h2>Custom Element Example</h2>
+
+    <project-highlight>
+        <h3>Featured Computer Science Project</h3>
+        <p>
+            This custom element highlights a project
+            from my Computer Science portfolio.
+        </p>
+    </project-highlight>
+</section>
+
+
+<section>
+    <h2>Console Custom Element</h2>
+    <p>
+        The following custom element prints a message
+        to the browser console when connected.
+    </p>
+
+    <hello-console></hello-console>
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Computer Science Portfolio.</p>
+        <p><a href="index.html">Return to Home</a></p>
+    </footer>
+</body>
+</html>

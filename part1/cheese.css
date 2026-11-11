@@ -1,0 +1,88 @@
+
+/*
+Name: Tangjian Shi
+Repository: https://github.com/TangjianShi0426/cse134b-hw3
+CSE 134B - Homework 3 Part 1
+*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #fffaf0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+/* Basic element selectors */
+h1 {
+    color: #704214;
+}
+
+h2 {
+    color: #8b5e3c;
+}
+
+/* Italicize Latin terms */
+.latin {
+    font-style: italic;
+}
+
+/* Highlight the warning */
+#warning {
+    background-color: #ffe4b5;
+}
+
+
+/* Center the page content */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the quotation */
+blockquote {
+    border: 2px solid #b8860b;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff3d6;
+}
+
+
+/* Change link appearance on hover */
+a:hover {
+    color: #b45309;
+    text-decoration: underline;
+}
+
+/* Visible keyboard focus for interactive elements */
+a:focus,
+input:focus,
+button:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+
+/* First rule: set paragraph spacing */
+p {
+    margin-bottom: 10px;
+}
+
+/*
+Both rules use the same selector and have equal specificity.
+The second rule wins because it appears later in the CSS.
+This demonstrates the CSS cascade.
+*/
+p {
+    margin-bottom: 16px;
+}
